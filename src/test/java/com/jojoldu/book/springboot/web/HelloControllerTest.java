@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot;
+package com.jojoldu.book.springboot.web;
 
 
 import org.junit.Test;
@@ -22,7 +22,9 @@ public class HelloControllerTest {
     public void hello_return() throws Exception{
         String hello = "hello";
 
-        mvc.perform(get("/hello")).andExpect(status().isOk()).andExpect(content().string(hello));
+        mvc.perform(get("/hello"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(hello));
     }
 
     @Test
