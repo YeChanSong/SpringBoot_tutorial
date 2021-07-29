@@ -1,13 +1,11 @@
 package com.jojoldu.book.springboot.domain.posts;
 
-
 import com.jojoldu.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Locale;
 
 @Getter
 @NoArgsConstructor
