@@ -37,7 +37,6 @@ var main = {
         content: $('#content').val()
         };
         var id = $('#id').val();
-
         $.ajax({
         type: 'PUT',
         url: '/api/v1/posts/' +id,
